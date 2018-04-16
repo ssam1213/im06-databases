@@ -3,13 +3,18 @@ CREATE DATABASE chat;
 USE chat;
 
 CREATE TABLE messages (
-  /* Describe your table here.*/
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(255),
+  text VARCHAR(255), 
+  roomname VARCHAR(255),
+  date DATETIME,
+  PRIMARY KEY(id)
 );
 
-/* Create other tables and define schemas for them here! */
+INSERT INTO messages  (username, text, roomname, date)
+VALUES ('WONBOK', "HI", "room1", now());
 
-
-
+SELECT * FROM messages;
 
 /*  Execute this file from the command line by typing:
  *    mysql -u root < server/schema.sql

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- dependencies -->
+    <!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <header id="index">
+        <h1>chatterbox</h1>
+      </header>
+      <div class="showcase">
+        <div class="ptxt">
+          <span class="border">
+            copyright &copy; hanyoungjae
+          </span>
+        </div>
+      </div>
+      <div class="middle">
+        <!-- <input id="username" placeholder="your name..."></input> -->
+        <!-- <input id="roomname" placeholder="room name..." /> -->
+        <div class="tagBox">
+          <select id="roomSelect" required>
+            <option value="" disabled selected hidden>카테고리를 선택하세요!</option>
+          </select>
+          <button id="roomChoice" class="btn">선택</button>
+        </div>
+        <!-- <div class="tag"><input id="text" placeholder="what's your think?" /></div> -->
+        <!-- <form target="_blank" action="http://ec2-13-209-16-71.ap-northeast-2.compute.amazonaws.com​:3000/messages" method="get"> -->
+        <div class="tagBox">
+          <input type="text" id="massage" name="massage" placeholder="무슨 생각을 하고 계시나요?">
+          <button id="post-message" class="btn">등록</button>
+        </div>
+        <!-- </form> -->
+      </div>
+    </div>
+    <div id="chats"></div>
+  </body>
+</html>
